@@ -132,7 +132,7 @@
       <keyword>x509</keyword>
     <abstract>
       <t>
-Tombstone notice: A variant of this proposal which allows two keys to be placed in a certificate but only one used at a time, was adopted in <xref target="itu-t-x509-2019"/>. This proposal is not currently being pursued by the IETF. The reason is that this proposal requires the large PQC key to be sent even to legacy cliens which will not use it. Additionally, this proposal does not present an encoding for multiple signatures produced by the multiple keys contained in a single certificate, so this document represents only a partial solution to the dual-signature problem. Active drafts, as of the time of writing, that accomplish similar goals include <xref target="I-D.becker-guthrie-cert-binding-for-multi-auth"/>, <xref target="I-D.ounsworth-pq-composite-sigs"/>, <xref target="I-D.bonnell-lamps-chameleon-certs"/>.
+Tombstone notice: A variant of this proposal which allows two keys to be placed in a certificate but only one used at a time, was adopted in <xref target="itu-t-x509-2019"/>. This proposal is not currently being pursued by the IETF. The reason is that this proposal requires the large PQC key to be sent even to legacy clients which will not use it. Additionally, this proposal does not present an encoding for the multiple signatures produced by the multiple keys contained in a hybrid certificate, so this document represents only a partial solution to the dual-signature problem. Active drafts, as of the time of writing, that accomplish similar goals include <xref target="I-D.becker-guthrie-cert-binding-for-multi-auth"/>, <xref target="I-D.ounsworth-pq-composite-sigs"/>, and <xref target="I-D.bonnell-lamps-chameleon-certs"/>.
 </t>
 <t>
 Original abstract:
