@@ -132,7 +132,10 @@
       <keyword>x509</keyword>
     <abstract>
       <t>
-Tombstone notice: A variant of this proposal which allows two keys to be placed in a certificate but only one used at a time, was adopted in <xref target="itu-t-x509-2019"/>. This proposal is not currently being pursued by the IETF. The reason is that this proposal requires the large PQC key to be sent even to legacy clients which will not use it. Additionally, this proposal does not present an encoding for the multiple signatures produced by the multiple keys contained in a hybrid certificate, so this document represents only a partial solution to the dual-signature problem. Active drafts, as of the time of writing, that accomplish similar goals include <xref target="I-D.becker-guthrie-cert-binding-for-multi-auth"/>, <xref target="I-D.ounsworth-pq-composite-sigs"/>, and <xref target="I-D.bonnell-lamps-chameleon-certs"/>.
+Tombstone notice:
+</t>
+<t>
+This draft is no longer being pursued at the IETF. A variant of this proposal was adopted in <xref target="itu-t-x509-2019"/>, which allows two keys to be placed in a certificate but only one used at a time. The major downside of this proposal is that it requires the large PQC key to be sent even to legacy clients which will not use it. Additionally, this proposal does not present a generic encoding for the multiple signatures produced by the multiple keys contained in a hybrid certificate, leaving the responsibility to dependent protocols and applications for how to carry multiple signatures and how to signal that multiple signatures should have been present in order to detect stripping attacks. As such, this document represents only a partial solution to the dual-signature problem. A more recently-submitted draft <xref target="I-D.bonnell-lamps-chameleon-certs"/> attempts to correct some of the shortcomings of this document by allowing the traditional certificate to be extracted and used in isolation. Other active drafts, as of the time of writing, that accomplish similar goals include <xref target="I-D.becker-guthrie-cert-binding-for-multi-auth"/>, <xref target="I-D.ounsworth-pq-composite-sigs"/>.
 </t>
 <t>
 Original abstract:
